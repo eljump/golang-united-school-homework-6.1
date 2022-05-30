@@ -86,7 +86,7 @@ func (b *box) RemoveAllCircles() error {
 
 	for _, shape := range b.shapes {
 		switch shape.(type) {
-		case Circle:
+		case *Circle:
 			hasCircles = true
 		default:
 			res = append(res, shape)
