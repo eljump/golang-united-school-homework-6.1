@@ -93,7 +93,7 @@ func (b *box) RemoveAllCircles() error {
 		}
 	}
 
-	if hasCircles {
+	if !hasCircles {
 		return errors.New("no circles")
 	}
 
